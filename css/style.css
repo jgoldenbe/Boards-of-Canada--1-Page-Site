@@ -1,0 +1,53 @@
+#headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: #0DB5B5;
+
+}
+
+#mainTitle {
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#artists {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#heroDiv {
+   position: relative;
+}
+
+#gradient {
+   width: 500px;
+   height: 500px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   background-image: linear-gradient(to bottom, transparent 50%, red 100%);
+}
+
+#hero {
+   width: 100%;
+   height: 100%;
+}
+
+#hero::after {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   display: block;
+
+   margin-top: -150px;
+   height: 150px;
+   width: 100%;
+   content: '';
+}
