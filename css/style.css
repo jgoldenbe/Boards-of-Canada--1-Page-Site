@@ -1,11 +1,60 @@
+html {
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+hr {
+   display: block;
+   margin-left: 20px;
+   margin-right: 20px;
+   border-radius: 10px;
+   border-style: inset;
+   border-width: 2px;
+}
+
+p {
+   overflow-y: hidden;
+}
+
+a {
+   text-decoration: none;
+   color: #0DB5B5;
+}
+
+li a:hover {
+   transition-duration: .2s;
+   color: black;
+}
+
+.scrollArrow {
+   width: 50px;
+   height: 50px;
+}
+
+.scrollA {
+   transition-duration: .5s;
+   width: 50px;
+   height: 50px;
+}
+
+.scroll {
+   margin: 20px;
+   right: 0;
+   position: absolute;
+}
+
 #headings {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-content: center;
   text-align: center;
   background-color: #0DB5B5;
+}
 
+#titles {
+   display: flex;
+   flex-direction: column;
 }
 
 #mainTitle {
@@ -25,13 +74,42 @@
 }
 
 #gradient {
-   width: 500px;
-   height: 500px;
+   width: 100%;
+   height: 100%;
    position: absolute;
    top: 0;
    left: 0;
    z-index: 3;
-   background-image: linear-gradient(to bottom, transparent 50%, red 100%);
+   background-image: linear-gradient(to bottom, transparent 50%, white 100%);
+}
+
+.gradientTop {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: -1;
+   background-image: linear-gradient(to top, transparent 40%, white 100%);   
+}
+
+.bgDiv{
+   display: flex;
+   flex-direction: column;
+}
+
+.bg {;
+   position: absolute;
+   width: 100%;
+   z-index: -1;
+}
+
+.gradient {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   background-image: linear-gradient(to bottom, transparent 50%, white 100%);
 }
 
 #hero {
@@ -49,5 +127,176 @@
    margin-top: -150px;
    height: 150px;
    width: 100%;
-   content: '';
+}
+
+#orderedListVideos {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+
+#songs {
+   
+   margin: 25px 50px 100px 50px;
+   justify-content: center;
+   box-shadow: 0px 20px 20px 0px rgb(100,100,100, .4);
+}
+
+#album {
+   text-align: center;
+   font-size: 20px;
+   padding-top: 5px;
+   padding-bottom: 10px;
+}
+
+#albumName {
+   font-weight: bold;
+   text-align: center;
+   font-size: 30px;
+   padding-top: 30px;
+   padding-bottom: 10px;
+}
+
+.listItem {
+   padding: 20px 20px 20px 20px;
+  box-shadow: 1px 0px 7px 0px grey, 0px 5px 10px 0 grey;
+  margin: 10px;
+}
+
+.youtubeVids {
+   width: 400px;
+   height: 225px;
+}
+
+.listItem p {
+   padding: 10px 0px 0px 5px;
+}
+
+#content {
+   margin: 150px 300px 0px;
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   color: black;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0px 0px 70px 10px rgb(100,100,100, .7);
+}
+
+.text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8 {
+   font-size: 20px;
+   width: 45%;
+   border-radius: 10px;
+}
+
+#text2,#text4,#text6,#text8 {
+   align-self: flex-end;
+   margin: 20px 0px 0px 0px;
+}
+
+.text1, #text3, #text5, #text7 {
+   margin: 25px 0px 0px 0px;
+}
+
+.text1{
+   padding-bottom: 5px;
+}
+
+.text2 {
+   margin-top: 0px;
+   padding-left: 40px;
+   padding-right: 50px;
+}
+
+.text3 {
+   margin-left: 20px;
+   width: 45%;
+   align-self: flex-end;
+   font-size: 20px;
+   padding-bottom: 5px;
+}
+
+.text4 {
+   width: 100%;
+   padding: 0px 40px 0px 40px;
+   font-size: 20px;
+}
+
+.text5 {
+   font-size: 20px;
+   padding: 0px 40px 0px 40px;
+}
+
+#moreInfo {
+   text-align: center;
+   font-size: 32px;
+   margin-top: 100px;
+   margin-bottom: -100px;
+   padding-top: 50px;
+}
+
+.contentItem {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+
+.text5 {
+   width: 45%;
+}
+
+.img2 {
+   margin-top: 0px !important;
+   margin-left: 0px !important;
+}
+
+.contentItem img {
+   margin-top: 0px !important;
+   width: 400px;
+   align-self: center;
+   justify-content: center;
+}
+
+.contentItem2 img {
+   margin-top: 0px !important;
+   width: 400px;
+   align-self: center;
+   justify-content: center;
+}
+
+.contentItem > div {
+   margin-left: 20px;
+   margin-top: 30px;
+}
+
+footer {
+}
+
+@media only screen and (max-width: 900px) {
+   .youtubeVids {
+      width: 370px;
+      height: 208.125px;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .youtubeVids {
+      width: 250px;
+      height: 140.625px;
+   }
+   #songs {
+      margin-left: 10px;
+      margin-right: 10px;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+   .youtubeVids {
+      width: 200px;
+      height: 112.5px;
+   }
 }
