@@ -19,7 +19,7 @@ p {
 
 a {
    text-decoration: none;
-   color: #0DB5B5;
+   color: #0db5b5;
 }
 
 li a:hover {
@@ -49,12 +49,12 @@ li a:hover {
 
 /****************Heading****************/
 #headings {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  background-color: #0DB5B5;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   background-color: #0db5b5;
 }
 
 #titles {
@@ -63,15 +63,15 @@ li a:hover {
 }
 
 #mainTitle {
-  padding: 15px;
-  font-size: 24px;
-  font-weight: bold;
+   padding: 15px;
+   font-size: 24px;
+   font-weight: 600;
 }
 
 #artists {
-  padding-bottom: 15px;
-  font-size: 20px;
-  font-weight: bold;
+   padding-bottom: 15px;
+   font-size: 20px;
+   font-weight: 600;
 }
 /****************Heading End****************/
 
@@ -107,7 +107,7 @@ li a:hover {
 }
 
 #albumName {
-   font-weight: bold;
+   font-weight: 600;
    text-align: center;
    font-size: 30px;
    padding-top: 30px;
@@ -122,27 +122,27 @@ li a:hover {
 }
 
 #songs {
-   margin: 25px 50px 100px 50px;
+   margin: 25px 50px 100px;
    justify-content: center;
-   box-shadow: 0px 20px 20px 0px rgb(100,100,100, .4);
+   box-shadow: 0 20px 20px 0 rgb(100, 100, 100, .4);
 }
 
 #orderedListVideos {
    display: flex;
-   flex-direction: row;
+   flex-flow: row;
    flex-wrap: wrap;
    justify-content: center;
    margin-bottom: 10px;
 }
 
 .listItem {
-   padding: 20px 20px 20px 20px;
-  box-shadow: 1px 0px 7px 0px grey, 0px 5px 10px 0 grey;
-  margin: 10px;
+   padding: 20px;
+   box-shadow: 1px 0 7px 0 grey, 0 5px 10px 0 grey;
+   margin: 10px;
 }
 
 .listItem p {
-   padding: 10px 0px 0px 5px;
+   padding: 10px 0 0 5px;
 }
 
 .youtubeVids {
@@ -152,12 +152,12 @@ li a:hover {
 /****************Hero Content End****************/
 
 /****************Section 2****************/
-.bgDiv{
+.bgDiv {
    display: flex;
    flex-direction: column;
 }
 
-.bg {;
+.bg {
    position: absolute;
    width: 100%;
    z-index: -1;
@@ -168,7 +168,7 @@ li a:hover {
    height: 100%;
    position: absolute;
    z-index: -1;
-   background-image: linear-gradient(to top, transparent 40%, white 100%);   
+   background-image: linear-gradient(to top, transparent 40%, white 100%);
 }
 
 #moreInfo {
@@ -180,26 +180,26 @@ li a:hover {
 }
 
 #content {
-   margin: 150px 19.7vw 0px;
+   margin: 150px 19.7vw 0;
    text-align: left;
    display: flex;
    flex-direction: column;
    color: black;
    background-color: white;
    border-radius: 10px;
-   box-shadow: 0px 0px 70px 10px rgb(100,100,100, .7);
+   box-shadow: 0 0 70px 10px rgb(100, 100, 100, .7);
 }
 
-.contentItem, .contentItem1 {
+.contentItem,
+.contentItem1 {
    display: flex;
-   flex-direction: row;
+   flex-flow: row;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: flex-start;
-   flex-wrap: wrap;
 }
 
 #content img {
-   margin-top: 0px !important;
    width: 26vw;
    align-self: center;
    justify-content: center;
@@ -210,17 +210,17 @@ li a:hover {
    padding-left: 40px;
    padding-right: 40px;
    font-size: 16px;
-   font-weight: bold;
+   font-weight: 600;
    text-align: center;
-   color: #0DB5B5;
+   color: #0db5b5;
 }
 
 .text1 {
    font-size: 1.31vw;
    width: 45%;
    margin-top: 25px;
-   padding-left: 0vw;
-   padding-right: .4vw
+   padding-left: 0;
+   padding-right: .4vw;
 }
 
 .img1 {
@@ -235,8 +235,7 @@ li a:hover {
 }
 
 .img2 {
-   margin-top: 4px !important;
-   margin-right: 0px !important;
+   margin-top: 4px;
 }
 
 .text3 {
@@ -245,7 +244,6 @@ li a:hover {
    font-size: 1.31vw;
    padding-bottom: 5px;
    padding-left: .4vw;
-   padding-right: 0vw;
 }
 
 .text4 {
@@ -268,10 +266,6 @@ li a:hover {
    width: 47%;
 }
 
-.img3 {
-   margin-top: -10px;
-}
-
 .contentItem3 {
    width: 100%;
    display: flex;
@@ -287,13 +281,46 @@ li a:hover {
 }
 /****************Section 2 End****************/
 
+/****************Footer****************/
+
+footer {
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   background-color: #ffff;
+}
+
+footer h2 {
+   font-weight: 600;
+}
+
+footer span {
+   color: red;
+}
+
+#author {
+   font-weight: 600;
+}
+
+#left {
+   margin-right: 10vw;
+}
+
+#right {
+   position: absolute;
+   right: 0;
+   padding-right: 20px;
+}
+
 @media only screen and (max-width: 900px) {
    .youtubeVids {
       width: 370px;
       height: 208.125px;
    }
+
    #content {
-         margin: 150px 13vw 0px;
+      margin: 150px 13vw 0;
    }
 }
 
@@ -302,6 +329,7 @@ li a:hover {
       width: 250px;
       height: 140.625px;
    }
+
    #songs {
       margin-left: 10px;
       margin-right: 10px;
