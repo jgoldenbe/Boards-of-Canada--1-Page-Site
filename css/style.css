@@ -1,10 +1,19 @@
+/* font-family: 'Calistoga', cursive;
+font-family: 'Montserrat', sans-serif; */
+
 /****************Presets****************/
 html {
    overflow-x: hidden;
    scroll-behavior: smooth;
 }
 
+body {
+   display: flex;
+   flex-direction: column;
+}
+
 hr {
+   font-family: Calistoga, cursive;
    display: block;
    margin-left: 20px;
    margin-right: 20px;
@@ -15,6 +24,7 @@ hr {
 
 p {
    overflow-y: hidden;
+   font-family: Montserrat, sans-serif;
 }
 
 a {
@@ -216,7 +226,7 @@ li a:hover {
 }
 
 .text1 {
-   font-size: 1.31vw;
+   font-size: 1.2vw;
    width: 45%;
    margin-top: 25px;
    padding-left: 0;
@@ -230,7 +240,7 @@ li a:hover {
 .text2 {
    padding-left: 3vw;
    padding-right: 3vw;
-   font-size: 1.31vw;
+   font-size: 1.2vw;
    align-self: flex-end;
 }
 
@@ -241,7 +251,7 @@ li a:hover {
 .text3 {
    width: 45%;
    align-self: flex-end;
-   font-size: 1.31vw;
+   font-size: 1.2vw;
    padding-bottom: 5px;
    padding-left: .4vw;
 }
@@ -250,7 +260,7 @@ li a:hover {
    width: 100%;
    padding-left: 3vw;
    padding-right: 3vw;
-   font-size: 1.31vw;
+   font-size: 1.2vw;
 }
 
 .contentItem2 {
@@ -260,7 +270,7 @@ li a:hover {
 }
 
 .text5 {
-   font-size: 1.31vw;
+   font-size: 1.2vw;
    padding-left: 3vw;
    padding-right: .4vw;
    width: 47%;
@@ -277,18 +287,20 @@ li a:hover {
 .text6 {
    padding-left: 3vw;
    padding-right: 3vw;
-   font-size: 1.31vw;
+   font-size: 1.2vw;
 }
 /****************Section 2 End****************/
 
 /****************Footer****************/
 
 footer {
+   height: 30px;
    padding: 20px;
    display: flex;
    flex-direction: row;
    width: 100%;
    background-color: #ffff;
+   justify-content: space-between;
 }
 
 footer h2 {
@@ -308,9 +320,7 @@ footer span {
 }
 
 #right {
-   position: absolute;
-   right: 0;
-   padding-right: 20px;
+   margin-right: 40px;
 }
 
 @media only screen and (max-width: 900px) {
